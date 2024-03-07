@@ -9,12 +9,12 @@ export default function Intro() {
       <div className='intro-content'>
         <span className='hello'>Hello,</span>
         <span className='IntroText'>
-          I'm <span className='introName'>Victor Murithi</span>
+          I'm <span className='introName'>Victor</span>
           <br />
           Software Engineer
         </span>
         <p className='introPara'>
-          I'm a software engineer with a passion for learning and creating web applications that solve real-world problems.
+          I'm a software engineer with a passion for learning and<br/> creating web applications that solve real-world problems.
         </p>
         <Link>
           <button className='introBtn'>Hire me</button>

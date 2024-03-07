@@ -1,16 +1,25 @@
 #intro {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    max-width: 75rem;
+    width: 100vw;
   }
   
   .image-container {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .bg-image {
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 2rem;
   }
   
   .intro-content {
@@ -36,6 +45,10 @@
   .introPara {
     font-size: medium;
     font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .intoText{
+    font-size: medium;
   }
   
   .introBtn {
