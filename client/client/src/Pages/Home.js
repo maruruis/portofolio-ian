@@ -4,7 +4,7 @@ import Footer from "../Layout/Footer";
 
 export default function Home() {
     return (
-        <div>
+        <div className="home">
             <Navbar/>
             <h1>Home</h1>
             <Footer/>
