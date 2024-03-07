@@ -1,29 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "../Css/Navbar.css"
+import "../Css/Navbar.css";
+import logo from "../Images/logo3.jpeg";
+import phoneIcon from "../Images/phone icon.jpeg";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+    <nav className='navbar'>
+        <img src={logo} alt='logo' className='logo'/>
+        <div className='desktopMenu'>
+            <Link className='desktopLink'>Home</Link>
+            <Link className='desktopLink'>About</Link>
+            <Link className='desktopLink'>Portfolio</Link>
+            <Link className='desktopLink'>Resume</Link>
+        </div>
+        <button className='desktopBtn'>
+            <img src={phoneIcon} alt='' className='desktopBtnImg'/>
+            Contact Me
+        </button>
     </nav>
-  );
+  )
 };
 
 export default Navbar;
