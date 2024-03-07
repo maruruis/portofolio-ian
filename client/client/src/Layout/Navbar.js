@@ -15,7 +15,6 @@ const Navbar = () => {
             <Link className='desktopLink'>Resume</Link>
         </div>
         <button className='desktopBtn'>
-            <img src={phoneIcon} alt='' className='desktopBtnImg'/>
             Contact Me
         </button>
     </nav>

@@ -8,9 +8,7 @@ export default function Intro() {
     <section id='intro'>
       <div className='intro-content'>
         <span className='hello'>Hello,</span>
-        <span className='IntroText'>
-          I'm <span className='introName'>Victor</span>
-          <br />
+        <span className='IntroText'>I'm <span className='introName'>Victor</span><br />
           Software Engineer
         </span>
         <p className='introPara'>
@@ -20,9 +18,7 @@ export default function Intro() {
           <button className='introBtn'>Hire me</button>
         </Link>
       </div>
-      <div className="image-container">
         <img src={bg} alt='profile' className='bg-image' />
-      </div>
     </section>
   );
 }

@@ -30,15 +30,11 @@
   background: white;
   color: black;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 1rem;
+  cursor: pointer;
+  height: 2rem;
   border-radius: 2rem;
 }
-.desktopBtnImg{
-  object-fit: cover;
-  height: 1rem;
-  width: 2rem;
-  margin: 1rem;
+.desktopBtn:hover{
+  background-color: greenyellow;
 }
