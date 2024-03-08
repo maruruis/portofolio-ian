@@ -1,8 +1,9 @@
-
+import React from 'react';
+import '../Css/Footer.css';
 export default function Footer() {
     return (
-        <div className="footer">
-            <p>Copyright 2022</p>
-        </div>
+        <footer className="footer">
+            <p>© 2024 Victor Murithi. All rights reserved.</p>
+        </footer>
     );
 }

@@ -86,14 +86,33 @@
     width:100vw;
     max-width: 45rem;
 }
-.name .email .msg{
+input.name, input.email, textarea.msg {
     font-size: medium;
-    width:100%;
+    width: 100%;
     max-width: 40rem;
     margin: 0.5rem;
-    padding:0.5rem 1;
+    padding: 0.5rem 2rem;
     color: white;
     border: none;
     border-radius: 0.5rem;
     background: rgb(40, 40, 40);
+}
+input.name::placeholder, input.email::placeholder, textarea.msg::placeholder {
+    color: white;
+    opacity: 0.7; 
+}
+.contactBtn{
+    background: yellowgreen;
+    border: none;
+    padding:0.75rem 3rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-bottom:2rem;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
