@@ -1,7 +1,6 @@
 import React from 'react';
 import "../Css/Navbar.css";
 import logo from "../Images/logo3.jpeg";
-import phoneIcon from "../Images/phone icon.jpeg";
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
