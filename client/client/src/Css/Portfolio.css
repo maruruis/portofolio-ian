@@ -76,6 +76,12 @@
     padding-bottom: 0.5rem;
     border-bottom: 3px solid yellowgreen;
     margin-right: 1rem;
+    cursor: pointer;
+  }
+  .link:hover{
+    color: rgb(102, 211, 59);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(102, 211, 59);
   }
   @media screen and (min-width: 768px) {
     .portfolioCards {
