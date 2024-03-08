@@ -8,7 +8,7 @@ export default function Portfolio() {
     <section id='portfolio'>
       <h2 className='portfolioTitle'>My Portfolio</h2>
       <span className='portfolioDesc'>
-        I take pride in my work. Here are some of my projects.
+      Welcome to my portfolio! 👋 As a junior developer, I'm passionate about building great websites and applications.<br/> I'm eager to learn, grow, and make a positive impact in the world of web development.<br/> Explore my projects and let's connect!
       </span>
       <div className='portfolioCards'>
         <div className='portfolioCard'>
@@ -24,7 +24,7 @@ export default function Portfolio() {
           <img src={TuneTide} alt='TuneTide Music' className='portfolioCardImage' />
           <div className='portfolioCardText'>
             <h2>TuneTide Music</h2>
-            <p>An interactive music platform that allows users to discover new artists, create playlists, and share their favorite tracks with friends.</p>
+            <p>An interactive music platform that allows users to discover new artists, view albums, and Listen to their favourite tracks.</p>
             <a href='https://tune-tide-react-app-lt8c.vercel.app/' target='_blank' rel='noopener noreferrer' className='link'>View project</a>
             <a href='https://github.com/VictorMurithi/TuneTide-react-app' target='_blank' rel='noopener noreferrer' className='link'>View code</a>
           </div>
