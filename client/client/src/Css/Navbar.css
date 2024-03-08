@@ -28,7 +28,7 @@
   border-bottom: 3px solid yellowgreen;
 }
 .desktopBtn{
-  background: white;
+  background: greenyellow;
   color: black;
   border: none;
   padding: 0 1rem;
@@ -37,5 +37,5 @@
   border-radius: 2rem;
 }
 .desktopBtn:hover{
-  background-color: greenyellow;
+  background-color: white;
 }
