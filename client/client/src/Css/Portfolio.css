@@ -77,3 +77,15 @@
     border-bottom: 3px solid yellowgreen;
     margin-right: 1rem;
   }
+  @media screen and (min-width: 768px) {
+    .portfolioCards {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .portfolioCard {
+      width: 45%;
+      margin-right: 2rem;
+    }
+    
+  }
