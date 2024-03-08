@@ -1,80 +1,90 @@
 #intro {
-    width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 75rem;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: -10rem;
-  }
-  
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 75rem;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: -10rem;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  object-fit: contain;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  transition: opacity 0.3s ease;
+}
+
+.intro-content {
+  margin: 0;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100vw;
+  position: relative;
+  z-index: 1;
+  align-items: flex-start;
+}
+.intro-content.hello{
+  text-align: left;
+}
+
+.hello {
+  text-align: left;
+  font-size: 1.75rem;
+  font-weight: 300;
+
+}
+
+.introName {
+  color: greenyellow;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.introBtn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.introBtn:hover {
+  background: greenyellow;
+}
+
+.bg-image:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 840px) {
   .bg-image {
-    position: absolute;
-    z-index: -3;
-    object-fit: contain;
-    height: 100%;
-    width: 50%;
-    right: 0;
-    top: 0;
-  }
-  
-  .intro-content {
-    margin: 0;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    max-width: 50%;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .hello {
-    font-size: 1.75rem;
-    font-weight: 300;
-  }
-  
-  .introName {
-    color: greenyellow;
-  }
-  
-  .introPara {
-    font-size: medium;
-    font-weight: 400;
-    letter-spacing: 1px;
-  }
-  
-  .introBtn {
-    background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .introBtn:hover {
-    background: greenyellow;
-  }
-  
-  @media screen and (max-width: 840px) {
-    .bg-image {
       right: calc(-10vw - 10%);
-    }
-    .intro-content {
-      font-size: 10vw;
-    }
-    .hello {
-      font-size: 5vw;
-    }
-    .introPara {
-      font-size: 3vw;
-    }
   }
-  
+  .intro-content {
+      font-size: 10vw;
+  }
+  .hello {
+      font-size: 5vw;
+  }
+  .introPara {
+      font-size: 3vw;
+  }
+}

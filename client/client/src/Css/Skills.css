@@ -40,11 +40,11 @@
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     background: rgb(50, 50, 50);
-    transition: transform 0.4s ease; /* Add transition for smooth effect */
+    transition: transform 0.4s ease;
 }
 
 .skillBar:hover {
-    transform: translateY(-7px); /* Move the skill bar up on hover */
+    transform: translateY(-7px);
 }
 
 .skillBarImage {

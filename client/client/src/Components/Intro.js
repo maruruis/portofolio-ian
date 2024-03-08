@@ -9,7 +9,7 @@ export default function Intro() {
       <div className='intro-content'>
         <span className='hello'>Hello,</span>
         <span className='IntroText'>I'm <span className='introName'>Victor</span><br />
-          Software Engineer
+          a Software Engineer
         </span>
         <p className='introPara'>
           I'm a software engineer with a passion for learning and<br/> creating web applications that solve real-world problems.
@@ -18,7 +18,7 @@ export default function Intro() {
           <button className='introBtn'>Hire me</button>
         </Link>
       </div>
-        <img src={bg} alt='profile' className='bg-image' />
+      <img src={bg} alt='profile' className='bg-image' />
     </section>
   );
 }
