@@ -39,3 +39,8 @@
 .desktopBtn:hover{
   background-color: white;
 }
+.active{
+  color: yellowgreen;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellowgreen;
+}

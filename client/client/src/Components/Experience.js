@@ -1,12 +1,31 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import logo from "../Images/Cellulant-logo.jpg";
 import facebook from "../Images/Facebook-icon.jpeg";
 import twitter from "../Images/twitter-icon.jpeg";
 import github from "../Images/Github.jpeg";
 import instagram from "../Images/instagram.jpeg";
 import "../Css/Experience.css";
+import emailjs from '@emailjs/browser';
 
 export default function Experience() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_d5d9gjs', 'template_1gk7gqk', form.current, {
+        publicKey: 'ZuBWE9fsjQp2z-e5lMn3n',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <section id='experience'>
       <div id='experienceContent'>
@@ -21,13 +40,13 @@ export default function Experience() {
           <p className='experienceCardText'>May 2022 - August 2022</p>
         </div>
       </div>
-      <div className='contact'>
+      <div id='contact'>
         <h1 className='contactTitle'>Contact Me</h1>
         <span className='contactDesc'> If you have any questions or would like to work together, please fill out the form below.</span>
-        <form className='contactForm'>
-          <input type='text' placeholder=' Your Name' className='name' />
-          <input type='email' placeholder='Your Email' className='email' />
-          <textarea placeholder='Your Message' className='msg' rows ='5' />
+        <form ref={form} className='contactForm' onSubmit={sendEmail}>
+          <input type='text' placeholder=' Your Name' name='your_name' className='name' />
+          <input type='email' placeholder='Your Email' className='email' name='your_email' />
+          <textarea name='message' placeholder='Your Message' className='msg' rows ='5' />
           <button className='contactBtn' type='submit' value='Send'>Send</button>
           <div className='links'>
             <img src={facebook} alt='facebook' className='logo'/>
