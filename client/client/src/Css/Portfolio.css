@@ -1,0 +1,72 @@
+#portfolio {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem
+}
+.portfolioTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: yellowgreen;
+}
+.portfolioDesc{
+    font-weight: 300;
+    font-size: 1.1rem;
+    max-width: 50rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5em;
+}
+.portfolioCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.portfolioCard {
+    background-color:rgb(50,50,50);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 45rem;
+    width: 100vw;
+  }
+  
+  .portfolioCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .portfolioCardImage {
+    width: 100vw;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .portfolioCardText {
+    padding: 1.5rem;
+  }
+  
+  .portfolioCardText h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolioCardText p {
+    font-size: 1rem;
+    color:white;
+    line-height: 1.5;
+  }
+  
