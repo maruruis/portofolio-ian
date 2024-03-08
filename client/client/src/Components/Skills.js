@@ -8,8 +8,11 @@ import backend from "../Images/Developer Back-end.jpeg"
 export default function Skills() {
   return (
     <section id='skills'>
-        <span className='skillTitle'>What I do </span>
-        <span className='skillDesc'> I can help you build a product , feature or website. Look through some of my work. If you like what you see and have a project you need coded, don’t hesitate to contact me.</span>
+        <span className='skillTitle'>What I Do </span>
+        <span className='skillDesc'>
+            Are you looking to bring your ideas to life? I specialize in building high-quality products, features, and websites tailored to your needs. Take a look at some of my previous work to see the quality and creativity I bring to each project. If you're impressed and have a project that needs coding, I'm here to help. Don't hesitate to reach out and let's turn your vision into reality.
+        </span>
+
         <div className='skillBars'>
             <div className='skillBar'>
                 <img src={webDesign} alt='webDesign'  className='skillBarImage'/>
