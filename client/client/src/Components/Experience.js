@@ -6,6 +6,8 @@ import github from "../Images/Github.jpeg";
 import instagram from "../Images/instagram.jpeg";
 import "../Css/Experience.css";
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 
 export default function Experience() {
   const form = useRef();
@@ -13,15 +15,23 @@ export default function Experience() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_d5d9gjs', 'template_1gk7gqk', form.current, {
-        publicKey: 'ZuBWE9fsjQp2z-e5lMn3n',
+    emailjs.sendForm('service_d5d9gjs', 'template_7rbb78k', form.current, {
+        publicKey: 'NNfkLo0zoAZ75x1Jo',
       })
       .then(
         () => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Email sent successfully',
+          })
           console.log('SUCCESS!');
         },
         (error) => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+          })
           console.log('FAILED...', error.text);
         },
       );

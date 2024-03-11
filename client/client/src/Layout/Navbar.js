@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../Css/Navbar.css";
 import logo from "../Images/logo3.jpeg";
-import menu from "../Images/menu.jpeg";
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-  const[showMenu, setShowMenu] = useState(false);
   return (
     <nav className='navbar'>
         <img src={logo} alt='logo' className='logo'/>
