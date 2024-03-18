@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../Images/iebc.jpeg";
+import iebc from "../Images/Iebc.jpeg";
 import facebook from "../Images/Facebook-icon.jpeg";
 import twitter from "../Images/twitter-icon.jpeg";
 import github from "../Images/Github.jpeg";
@@ -15,7 +15,7 @@ export default function Experience() {
       </div>
       <div className='experienceCards'>
         <div className='experienceCard'>
-          <img src={logo} alt='Company' className='experienceCardImage' />
+          <img src={iebc} alt='Company' className='experienceCardImage' />
           <p className='experienceCardText'>IEBC, Kenya</p>
           <p className='experienceCardText'>ICT Officer, Ruaraka constituency</p>
           <p className='experienceCardText'>May 2022 - August 2022</p>
