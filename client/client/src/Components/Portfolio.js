@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Css/Portfolio.css';
 import flightFusion from '../Images/FlightFusion1.jpg';
-import TuneTide from "../Images/TuneTide2.jpg";
+import Airbnb from "../Images/BnB app.jpg";
 
 export default function Portfolio() {
   return (
@@ -21,12 +21,12 @@ export default function Portfolio() {
           </div>
         </div>
         <div className='portfolioCard'>
-          <img src={TuneTide} alt='TuneTide Music' className='portfolioCardImage' />
+          <img src={TuneTide} alt='BnB project ' className='portfolioCardImage' />
           <div className='portfolioCardText'>
             <h2>TuneTide Music</h2>
             <p>An interactive music platform that allows users to discover new artists, view albums, and Listen to their favourite tracks.</p>
-            <a href='https://tune-tide-react-app-lt8c.vercel.app/' target='_blank' rel='noopener noreferrer' className='link'>View project</a>
-            <a href='https://github.com/VictorMurithi/TuneTide-react-app' target='_blank' rel='noopener noreferrer' className='link'>View code</a>
+            <a href='https://65b40a0c51be0c031dcbb855--incandescent-heliotrope-d56da9.netlify.app//' target='_blank' rel='noopener noreferrer' className='link'>View project</a>
+            <a href='https://github.com/DanielMutuku-codedanstreak/Airbnb-react-flask-project' target='_blank' rel='noopener noreferrer' className='link'>View code</a>
           </div>
         </div>
       </div>

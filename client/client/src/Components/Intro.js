@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Css/Intro.css';
-import bg from '../Images/bg-remove.png';
+import bg from '../Images/bg-remover.png';
 import { Link } from 'react-scroll';
 
 export default function Intro() {
@@ -10,7 +10,7 @@ export default function Intro() {
         <div className='intro-text'>
           <span className='hello'>Hello,</span>
           <span className='introText'>
-            I'm <span className='introName'>Victor</span>,<br />
+            I'm <span className='introName'>Ian</span>,<br />
             a Software Engineer
           </span>
           <p className='introPara'>
